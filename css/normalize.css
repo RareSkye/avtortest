@@ -4,6 +4,7 @@
  * 2. Prevent iOS and IE text size adjust after device orientation change,
  *    without disabling user zoom.
  */
+
 html {
   font-family: sans-serif;
   /* 1 */
@@ -11,6 +12,28 @@ html {
   /* 2 */
   -webkit-text-size-adjust: 100%;
   /* 2 */
+}
+
+.file-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Стили для ссылок */
+.file-link {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #f1f4f9; /* Полупрозрачный фон */
+  color: #333;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.file-link:hover {
+  background-color: rgba(255, 215, 0, 0.4); /* Более яркий фон при наведении */
+  transform: scale(1.02); /* Легкое увеличение */
 }
 /**
  * Remove default margin.
